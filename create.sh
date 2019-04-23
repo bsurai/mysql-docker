@@ -20,7 +20,14 @@ docker pull mysql
 
 # Run a container
 # Path=$(cd ./scripts; pwd)
-DataPath=$(cd ./data; pwd)
+data="data"
+
+if [ ! -d "$data" ]; then
+  # Control will enter here if $DIRECTORY exists.
+  mkdir -p -- "$data"
+fi
+
+DataPath=$(cd ./$data; pwd)
 
 if [ -z $Password ]
 then
@@ -55,4 +62,6 @@ eval 'docker logs $ContainerName' # 2>&1 | grep GENERATED'
 echo
 
 # eval 'docker exec -it $ContainerName mysql -uroot -p'
+
+
 
