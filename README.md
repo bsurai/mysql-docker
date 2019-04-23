@@ -9,8 +9,6 @@ You have to install [Docker](https://www.docker.com/) on your system:
 - [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - [Mac](https://docs.docker.com/docker-for-mac/install/)
 - [Windows](https://docs.docker.com/docker-for-windows/install/)
-- [AWS](https://docs.docker.com/docker-for-aws/)
-- [Azure](https://docs.docker.com/docker-for-azure/)
 
 
 # Deployment
