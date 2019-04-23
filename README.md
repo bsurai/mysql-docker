@@ -16,6 +16,7 @@ You have to install [Docker](https://www.docker.com/) on your system:
 # Deployment
 
 - Copy the repository typing `git clone` in your Terminal.
+- Move in the created diretctory `cd mysql-docker`.
 - Run a command `./create.sh` in the Terminal. It creates a docker container with MySQL database.
 - You can get access to created database through `127.0.0.1:3306`.
 - All data persist in `data` subdirectory.
